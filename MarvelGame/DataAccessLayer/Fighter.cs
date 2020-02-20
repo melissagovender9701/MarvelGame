@@ -4,21 +4,16 @@ using System.Text;
 
 namespace MarvelGame.DataAccessLayer
 {
-    public class Ability
+    public abstract class Fighter
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Power { get; set; }
-        public double StrengthRating { get; set; }
+        public int StrengthRating { get; set; }
         public string Weapon { get; set; }
-        public double WeaponRating { get; set; }
+        public int WeaponRating { get; set; }
 
-        public Ability()
-        {
-
-        }
-
-        public Ability(int id, string name, string power, double strengthRating, string weapon, double weaponRating)
+        public Fighter(int id, string name, string power, int strengthRating, string weapon, int weaponRating)
         {
             Id = id;
             Name = name;
@@ -27,5 +22,7 @@ namespace MarvelGame.DataAccessLayer
             Weapon = weapon;
             WeaponRating = weaponRating;
         }
+
+        public abstract void DisplayFighterDetails();
     }
 }
