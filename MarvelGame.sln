@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarvelGame", "MarvelGame\MarvelGame.csproj", "{3AA260B4-B2A9-4614-BE7B-66CE937D9AC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AA260B4-B2A9-4614-BE7B-66CE937D9AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA260B4-B2A9-4614-BE7B-66CE937D9AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA260B4-B2A9-4614-BE7B-66CE937D9AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA260B4-B2A9-4614-BE7B-66CE937D9AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D4C7CAB-238B-497E-97E0-4D747522D1E2}
+	EndGlobalSection
+EndGlobal
