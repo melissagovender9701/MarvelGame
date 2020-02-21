@@ -20,13 +20,13 @@ namespace MarvelGame.BusinessLogicLayer
             {
                 new Villain(1, "Doctor Doom", "Mind Transference, Genius-level Intellect, Superhuman Strength, Cosmic powers", strengthRating,"Doombots, Enhanced Strength, Electric Shock, Concussive Blasts, Jet-packs", weaponRating,"Doctor doom is using his powers on a quest for control"),
                 new Villain(2, "Green Goblin", "Superhuman Strength, Superhuman Speed, Accelerated Healing, Superhuman Reflexes", strengthRating,"Pumpkin Bombs, Razor Bats, Electricity Generation",weaponRating,"Green Goblin wants to attain more power and wealth."),
-                new Villain(3, "Loki", "Magic, Superhuman-Durability, Mind Tricks",strengthRating,"The Scepter",weaponRating,"Loki's goal is to obtain the Tesseract & Take over Earth.")
             };
             return VillainList;
         }
 
         public static void VillainDisplay()
         {
+            index++;
             var villain = VillainList.Find(x => x.Id == Convert.ToInt32(index));
             villain.StrengthRating = strengthRating++;
             villain.WeaponRating = weaponRating++;
