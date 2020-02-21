@@ -7,9 +7,8 @@ namespace MarvelGame.DataAccessLayer
     public class Villain : Fighter
     {
         public string Agenda { get; set; }
-        public static Random random = new Random();
 
-        public Villain(int id, string name, string power, int strengthRating, string weapon, int weaponRating, string agenda):base(id, name, power, strengthRating, weapon, weaponRating)
+        public Villain(int id, string name, string power, string weapon, string agenda):base(id, name, power, weapon)
         {
             Agenda = agenda;
         }

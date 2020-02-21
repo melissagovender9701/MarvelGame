@@ -13,14 +13,16 @@ namespace MarvelGame.DataAccessLayer
         public string Weapon { get; set; }
         public int WeaponRating { get; set; }
 
-        public Fighter(int id, string name, string power, int strengthRating, string weapon, int weaponRating)
+        public static Random random = new Random();
+
+        public Fighter(int id, string name, string power, string weapon)
         {
             Id = id;
             Name = name;
             Power = power;
-            StrengthRating = strengthRating;
+            StrengthRating = random.Next(1, 10);
             Weapon = weapon;
-            WeaponRating = weaponRating;
+            WeaponRating = random.Next(1, 10);
         }
 
         public abstract void DisplayFighterDetails();

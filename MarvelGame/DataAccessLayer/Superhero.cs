@@ -8,7 +8,7 @@ namespace MarvelGame.DataAccessLayer
     {
         public string ArchNemesis { get; set; }
 
-        public Superhero(int id, string name, string power, int strengthRating, string weapon, int weaponPower, string archNemesis) : base(id, name, power, strengthRating, weapon, weaponPower)
+        public Superhero(int id, string name, string power, string weapon, string archNemesis) : base(id, name, power, weapon)
         {
             ArchNemesis = archNemesis;
         }

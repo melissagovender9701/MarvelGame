@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarvelGame.DataAccessLayer;
+using System;
 
 namespace MarvelGame.BusinessLogicLayer
 {
@@ -40,20 +41,16 @@ namespace MarvelGame.BusinessLogicLayer
                                 $"{superhero.Name}'s Total Power Rating:  {superheroTotalPower}");
             Console.WriteLine($"\n{villain.Name}'s Strength Rating:       {villain.StrengthRating}\n" +
                                 $"{villain.Name}'s Weapon Rating:         {villain.WeaponRating}\n" +
-                                $"{villain.Name}'s Total Power Rating:    {villainTotalPower}");
+                                $"{villain.Name}'s Total Power Rating:    {villainTotalPower}\n");
             Console.WriteLine("--------------------------------\n");
 
             if (superheroTotalPower > villainTotalPower)
             {
                 Console.WriteLine($"\nYou have defeated {villain.Name}!");
             }
-            else
+            else if(villainTotalPower > superheroTotalPower)
             {
                 Console.WriteLine($"\n{villain.Name} has defeated you....\nGame Over");
-            }
-            if (superheroTotalPower == villainTotalPower)
-            {
-                Console.WriteLine($"\n\nThere was a tie, press any key to verse him again...");
             }
          }
     }
